@@ -13,7 +13,7 @@ jobs:
     - name: Build the Docker image
       run: docker build -t quelpoke .
     - name: Tag the Docker image
-      run: docker tag quelpoke europe-west9-docker.pkg.dev/infal-devops-sysops/${{secrets.PUSH_KEY}}/quelpoke:latest
+      run: docker tag quelpoke europe-west9-docker.pkg.dev/infal-devops-sysops/student-thibaud/quelpoke:latest
     
     - name: Docker login
       uses: docker/login-action@v3
