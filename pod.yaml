@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-exemple
+  namespace: thibaud
+spec:
+  containers:
+  - name: quelpoke
+    image: europe-west9-docker.pkg.dev/infal-devops-sysops/student-thibaud/quelpoke:latest
+    resources:
+      requests:
+        cpu: 50m
+        memory: 64Mi
