@@ -4,7 +4,7 @@ name: Deploy Namespace to Kubernetes
 on:
   push:
     branches:
-      - MatMatmgt-patch-5  # Trigger on push to a specific branch
+      - main # Trigger on push to a specific branch
 
 jobs:
   deploy:
